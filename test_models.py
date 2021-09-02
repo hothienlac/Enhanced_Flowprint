@@ -17,8 +17,7 @@ from multiprocessing import cpu_count
 MODEL_PATH = 'models'
 TEST_DATA_PATH = 'test_data'
 RESULT_FOLDER = 'prediction'
-# NUMBER_OF_PROCESSED = cpu_count() // 2
-NUMBER_OF_PROCESSED = 2
+NUMBER_OF_PROCESSED = cpu_count() // 2
 
 
 def get_max_frequent(x):
