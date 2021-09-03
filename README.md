@@ -11,7 +11,7 @@ Our dataset is very large compared to the dataset used in Flowprint paper. So, w
 Preprocessed data is available at: https://drive.google.com/file/d/1GbXgjkvJaaxlzcddfXcToGzWZ6O7g-Em/view?usp=sharing.
 We have splited in different windows size and overlap time. Naming convention is WindowsSize_Overlap. We have 5 folder, corresponding with 1_0, 2_0, 3_1, 4_2, and 5_3. In each folder, we have one zip file for training data and one for testing data.
 
-# Train models
+# Train
 
 To train models, you must first download the training data set. The training data set should be put into the train_data directory. To start training, run the file train_models.py. The train results will be saved to the models folder.
 ```
@@ -20,7 +20,7 @@ python train_models.py
 
 By default, program will run in parallel, with number of thread is half of number of CPU threads. You can modify it by changing NUMBER_OF_PROCESSED variable.
 
-# Test models
+# Test
 
 To test, we first download the testing data set. The testing data set is placed in the test_data folder.
 We run the file test_models.py to start the test. The prediction results of the models, the predictions for each sample are saved separately, in the prediction folder.
