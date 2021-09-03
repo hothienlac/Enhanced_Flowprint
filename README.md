@@ -9,13 +9,23 @@ The original implementation of FlowPrint is available on https://github.com/Thij
 Our dataset is very large compared to the dataset used in Flowprint paper. So, we split data into small chunks, to train different models. Each models will be trained, and preditct independently. After all, we predict by combine all the models using voting technique.
 
 Preprocessed data is available at: https://drive.google.com/file/d/1GbXgjkvJaaxlzcddfXcToGzWZ6O7g-Em/view?usp=sharing.
-We have splited in different windows size and overlap time. Naming convention is WindowsSize_Overlap. We have 5 folder, corresponding with 1_0, 2_0, 3_1, 4_2, and 5_3. In each folder, we have one zip file for training data and one for testing data.
+We have splited in different traffic duration and overlap time. Naming convention is WindowsSize_Overlap. We have 5 folder, corresponding with 1_0, 2_0, 3_1, 4_2, and 5_3. In each folder, we have one zip file for training data and one for testing data.
 
 # Train
 
 To train models, you must first download the training data set. The training data set should be put into the train_data directory. To start training, run the file train_models.py. The train results will be saved to the models folder.
 ```
 python train_models.py
+```
+
+From line 50 to 55, you can modify Flowprint configuration like batch, windows size, correlation, or similarity.
+```
+flowprint = FlowPrint(
+    batch       = 300,
+    window      = 30,
+    correlation = 0.1,
+    similarity  = 0.9
+)
 ```
 
 By default, program will run in parallel, with number of thread is half of number of CPU threads. You can modify it by changing NUMBER_OF_PROCESSED variable.
