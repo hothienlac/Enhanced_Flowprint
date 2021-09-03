@@ -28,6 +28,8 @@ flowprint = FlowPrint(
 )
 ```
 
+In the paper, we did try window size of 1, 5, and 10. We see that the result is best at 10, so we use window size of 10 as default.
+
 By default, program will run in parallel, with number of thread is half of number of CPU threads. You can modify it by changing NUMBER_OF_PROCESSED variable.
 
 # Test
