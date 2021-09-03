@@ -14,6 +14,9 @@ We have splited in different windows size and overlap time. Naming convention is
 # Train models
 
 To train models, you must first download the training data set. The training data set should be put into the train_data directory. To start training, run the file train_models.py. The train results will be saved to the models folder.
+```
+python train_models.py
+```
 
 By default, program will run in parallel, with number of thread is half of number of CPU threads. You can modify it by changing NUMBER_OF_PROCESSED variable.
 
@@ -21,12 +24,21 @@ By default, program will run in parallel, with number of thread is half of numbe
 
 To test, we first download the testing data set. The testing data set is placed in the test_data folder.
 We run the file test_models.py to start the test. The prediction results of the models, the predictions for each sample are saved separately, in the prediction folder.
+```
+python test_models.py
+```
 
 By default, program will run in parallel, with number of thread is half of number of CPU threads. You can modify it by changing NUMBER_OF_PROCESSED variable.
 
 After having prediction of models, we combine them by voting. We run file voting.py to vote. voting.py will create a folder inside predict folder, contain prediction of voting all available model prediction.
+```
+python voting.py
+```
 
 To have a summary of precision, recall, f1, and accuracy of each model, and voting, we run file print_results.py, those summary will print to the console.
+```
+python print_results.py
+```
 
 
 # References
