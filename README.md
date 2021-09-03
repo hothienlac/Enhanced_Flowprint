@@ -22,7 +22,7 @@ From line 50 to 55, you can modify Flowprint configuration like batch, windows s
 ```
 flowprint = FlowPrint(
     batch       = 300,
-    window      = 30,
+    window      = 10,
     correlation = 0.1,
     similarity  = 0.9
 )
