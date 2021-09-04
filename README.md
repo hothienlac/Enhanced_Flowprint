@@ -8,8 +8,13 @@ The original implementation of FlowPrint is available on https://github.com/Thij
 
 Our dataset is very large compared to the dataset used in Flowprint paper. So, we split data into small chunks, to train different models. Each models will be trained, and preditct independently. After all, we predict by combine all the models using voting technique.
 
-Preprocessed data is available at: https://drive.google.com/drive/folders/113i9dXp7WRnOU68isneAgI0J1cUUISlD?usp=sharing.
 We have splited in different traffic duration and overlap time. Naming convention is WindowsSize_Overlap. We have 5 folder, corresponding with 1_0, 2_0, 3_1, 4_2, and 5_3. In each folder, we have one zip file for training data and one for testing data.
+
+Preprocessed data is available at:
+* 1_0 and 2_0: https://drive.google.com/drive/folders/113i9dXp7WRnOU68isneAgI0J1cUUISlD?usp=sharing.
+* 3_1: https://drive.google.com/drive/folders/1DV1jdM-hAh6nnZ_9WpUd6vlx8udc7wbW?usp=sharing.
+* 4_2: https://drive.google.com/drive/folders/1jk4jTNFrJwylzlHtBdXvoED4U0M2kAoM?usp=sharing.
+* 5_3: https://drive.google.com/drive/folders/1KwkOYS-yKOe2DcdbjcS1cbXxuj5psqOm?usp=sharing.
 
 # Train
 
