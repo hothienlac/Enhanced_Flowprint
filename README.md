@@ -1,4 +1,4 @@
-# Voting_Flowprint
+# Enhanced_Flowprint
 
 This code was implemented as part of the MAppGraph [1] paper. It is based on the implementation of Flowprint [2]. There are some new functions in the code compared to the original version. I also implement to run in parallel to increase performance.
 
